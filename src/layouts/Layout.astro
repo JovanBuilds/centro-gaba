@@ -1,0 +1,56 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import '../styles/global.css';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title = "Centro Psicológico GABA | Tu bienestar, nuestra prioridad", description = "Centro Psicológico GABA. Profesionales en salud mental. Agenda tu evaluación inicial hoy mismo." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		
+		<ClientRouter />
+		
+		<!-- Inicialización de Modo Oscuro para evitar FOUC (parpadeo blanco) -->
+		<script is:inline>
+			const theme = (() => {
+				if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+					return localStorage.getItem('theme');
+				}
+				if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					return 'dark';
+				}
+				return 'light';
+			})();
+			
+			if (theme === 'light') {
+				document.documentElement.classList.remove('dark');
+				document.documentElement.classList.add('light');
+			} else {
+				document.documentElement.classList.add('dark');
+				document.documentElement.classList.remove('light');
+			}
+			window.localStorage.setItem('theme', theme);
+		</script>
+	</head>
+	<body class="bg-[var(--color-gaba-bg)] text-[var(--color-gaba-navy)] font-sans antialiased selection:bg-[var(--color-gaba-blue)] selection:text-white">
+		<slot />
+	</body>
+</html>

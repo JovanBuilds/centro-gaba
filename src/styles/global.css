@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  /* 
+    Configuración de colores de Tailwind usando variables CSS dinámicas.
+    Ahora puedes usar estas clases de Tailwind directamente:
+    - Fondos: bg-gaba-bg, bg-gaba-surface, bg-gaba-surface-alt, bg-gaba-footer
+    - Textos: text-gaba-navy, text-gaba-blue, text-gaba-green
+    - Bordes: border-gaba-border
+  */
+  --color-gaba-bg: var(--bg-primary);
+  --color-gaba-navy: var(--text-primary);
+  --color-gaba-blue: var(--brand-blue);
+  --color-gaba-green: var(--brand-green);
+  
+  /* Nuevos colores semánticos para elementos futuros (Tarjetas, Inputs, etc.) */
+  --color-gaba-surface: var(--bg-surface);
+  --color-gaba-surface-alt: var(--bg-surface-alt);
+  --color-gaba-border: var(--border-color);
+  --color-gaba-footer: var(--bg-footer);
+}
+
+@layer base {
+  /* ==========================================================
+     MODO CLARO (Por defecto / Iluminado)
+     ========================================================== */
+  :root {
+    /* Paleta original de GABA */
+    --bg-primary: #F5F0E6;
+    --text-primary: #1A2A44;
+    --brand-blue: #4F90BF;
+    --brand-green: #8DA86F;
+    
+    /* Colores para tarjetas, fondos de secciones y bordes */
+    --bg-surface: #ffffff;
+    --bg-surface-alt: #f9fafb;
+    --border-color: #e5e7eb;
+    --bg-footer: #1A2A44; /* Azul oscuro fijo del footer original */
+  }
+
+  /* ==========================================================
+     MODO OSCURO
+     ========================================================== */
+  /* 1. Activación automática según el sistema/navegador del usuario (A menos que se fuerce modo claro) */
+  @media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+      --bg-primary: #0F172A; /* Fondo oscuro principal */
+      --text-primary: #F8FAFC; /* Texto claro */
+      --brand-blue: #60A5FA; /* Azul más vibrante para oscuro */
+      --brand-green: #A3E635; /* Verde más brillante para oscuro */
+      
+      --bg-surface: #1E293B; /* Fondo para tarjetas y secciones */
+      --bg-surface-alt: #334155; /* Fondos alternativos o inputs */
+      --border-color: #475569; /* Bordes adaptados al fondo oscuro */
+      --bg-footer: #182335; /* Un tono oscuro profundo para el footer que entone con Slate 900 */
+    }
+  }
+
+  /* 2. Activación manual asignando la clase "dark" al <html> */
+  :root.dark {
+    --bg-primary: #0F172A;
+    --text-primary: #F8FAFC;
+    --brand-blue: #60A5FA;
+    --brand-green: #A3E635;
+    
+    --bg-surface: #1E293B;
+    --bg-surface-alt: #334155;
+    --border-color: #475569;
+    --bg-footer: #182335;
+  }
+}
+
+body {
+  /* Al usar directamente las variables Tailwind en body, aplica a toda la página */
+  background-color: var(--color-gaba-bg);
+  color: var(--color-gaba-navy);
+  font-family: 'Inter', sans-serif;
+  
+  /* Transición suave y hermosa al cambiar de modo claro a oscuro en todo el body */
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
