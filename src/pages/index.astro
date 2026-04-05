@@ -38,7 +38,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Enlaces Centrados -->
-        <nav class="hidden md:flex justify-center items-center flex-1 gap-10">
+        <nav class="hidden md:flex justify-center items-center flex-1 gap-8 lg:gap-10">
           <a
             href="#inicio"
             class="relative group px-1 py-2 flex flex-col items-center justify-center"
@@ -46,6 +46,19 @@ import Layout from "../layouts/Layout.astro";
             <span
               class="text-[var(--color-gaba-navy)]/90 group-hover:text-[var(--color-gaba-navy)] font-medium text-[15px] tracking-wide transition-colors"
               >Inicio</span
+            >
+            <span
+              class="absolute -bottom-1 w-0 h-[3px] bg-[var(--color-gaba-blue)] rounded-full transition-all duration-300 group-hover:w-full opacity-90"
+            ></span>
+          </a>
+
+          <a
+            href="#identidad"
+            class="relative group px-1 py-2 flex flex-col items-center justify-center"
+          >
+            <span
+              class="text-[var(--color-gaba-navy)]/90 group-hover:text-[var(--color-gaba-navy)] font-medium text-[15px] tracking-wide transition-colors"
+              >Nuestra Identidad</span
             >
             <span
               class="absolute -bottom-1 w-0 h-[3px] bg-[var(--color-gaba-blue)] rounded-full transition-all duration-300 group-hover:w-full opacity-90"
@@ -85,6 +98,19 @@ import Layout from "../layouts/Layout.astro";
             <span
               class="text-[var(--color-gaba-navy)]/90 group-hover:text-[var(--color-gaba-navy)] font-medium text-[15px] tracking-wide transition-colors"
               >Nuestras Sedes</span
+            >
+            <span
+              class="absolute -bottom-1 w-0 h-[3px] bg-[var(--color-gaba-blue)] rounded-full transition-all duration-300 group-hover:w-full opacity-90"
+            ></span>
+          </a>
+
+          <a
+            href="#modelo-funcionamiento"
+            class="relative group px-1 py-2 flex flex-col items-center justify-center"
+          >
+            <span
+              class="text-[var(--color-gaba-navy)]/90 group-hover:text-[var(--color-gaba-navy)] font-medium text-[15px] tracking-wide transition-colors"
+              >Modelo</span
             >
             <span
               class="absolute -bottom-1 w-0 h-[3px] bg-[var(--color-gaba-blue)] rounded-full transition-all duration-300 group-hover:w-full opacity-90"
@@ -256,52 +282,58 @@ import Layout from "../layouts/Layout.astro";
         <div class="text-center mb-10 sm:mb-16">
           <h3 class="text-2xl sm:text-3xl font-bold text-[var(--color-gaba-blue)] mb-3">Valores Institucionales</h3>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 text-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-center">
           <!-- Valor 1 -->
-          <div class="group flex flex-col items-center p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
+          <div class="group flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
              <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
-             <h4 class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight">Ética</h4>
-             <p class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10">
+             <div class="w-12 h-12 rounded-xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl mb-4 border border-[var(--color-gaba-border)] z-10 group-hover:scale-110 transition-transform">⚖️</div>
+             <h4 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Ética</h4>
+             <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">
                Actuamos con estricto apego a los principios éticos, delimitando con claridad el alcance de nuestras funciones y responsabilidades.
              </p>
           </div>
           <!-- Valor 2 -->
-          <div class="group flex flex-col items-center p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
+          <div class="group flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
              <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
-             <h4 class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight">Respeto</h4>
-             <p class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10">
+             <div class="w-12 h-12 rounded-xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl mb-4 border border-[var(--color-gaba-border)] z-10 group-hover:scale-110 transition-transform">🤝</div>
+             <h4 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Respeto</h4>
+             <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">
                Reconocemos la dignidad e historia de cada individuo. Evitamos prácticas estigmatizantes y promovemos un trato sensible y cuidadoso.
              </p>
           </div>
           <!-- Valor 3 -->
-          <div class="group flex flex-col items-center p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
+          <div class="group flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
              <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
-             <h4 class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight">Autonomía</h4>
-             <p class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10">
+             <div class="w-12 h-12 rounded-xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl mb-4 border border-[var(--color-gaba-border)] z-10 group-hover:scale-110 transition-transform">👤</div>
+             <h4 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Autonomía</h4>
+             <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">
                Respetamos de manera firme la capacidad de decisión de las personas y procuramos un ejercicio ético respetando la clínica.
              </p>
           </div>
           <!-- Valor 4 -->
-          <div class="group flex flex-col items-center p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
+          <div class="group flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
              <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
-             <h4 class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight">Colaboración</h4>
-             <p class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10">
+             <div class="w-12 h-12 rounded-xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl mb-4 border border-[var(--color-gaba-border)] z-10 group-hover:scale-110 transition-transform">🌐</div>
+             <h4 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Colaboración</h4>
+             <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">
                Creemos plenamente en el trabajo en red como una forma eficaz de enriquecer la práctica profesional y fortalecer procesos.
              </p>
           </div>
           <!-- Valor 5 -->
-          <div class="group flex flex-col items-center p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
+          <div class="group flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
              <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
-             <h4 class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight">Inclusión</h4>
-             <p class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10">
+             <div class="w-12 h-12 rounded-xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl mb-4 border border-[var(--color-gaba-border)] z-10 group-hover:scale-110 transition-transform">🌈</div>
+             <h4 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Inclusión</h4>
+             <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">
                Promovemos entornos seguros, particularmente en el ámbito escolar, favoreciendo de manera activa su participación y adaptación.
              </p>
           </div>
           <!-- Valor 6 -->
-          <div class="group flex flex-col items-center p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
+          <div class="group flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden">
              <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
-             <h4 class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight">Transparencia</h4>
-             <p class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10">
+             <div class="w-12 h-12 rounded-xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl mb-4 border border-[var(--color-gaba-border)] z-10 group-hover:scale-110 transition-transform">💎</div>
+             <h4 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Transparencia</h4>
+             <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">
                Comunicamos de manera honesta los alcances logrados, manteniendo siempre procesos ordenados y plenamente comprensibles.
              </p>
           </div>
@@ -375,135 +407,41 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
 
-      <div
-        class="flex flex-wrap justify-center items-stretch gap-4 sm:gap-6 md:gap-8 text-center reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-200 ease-out"
-      >
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-center reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-200 ease-out">
         <!-- Servicio 1 -->
-        <article
-          class="w-[calc(50%-0.5rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] flex flex-col items-center p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden"
-        >
-          <div
-            class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"
-          >
-          </div>
-          <div
-            class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0"
-          >
-            🧸
-          </div>
-          <h3
-            class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight"
-          >
-            Psicoterapia Infantil
-          </h3>
-          <p
-            class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10"
-          >
-            Acompañamiento lúdico y empático para el desarrollo emocional pleno
-            en la niñez.
-          </p>
+        <article class="flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
+          <div class="w-16 h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0">🧸</div>
+          <h3 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Psicoterapia Infantil</h3>
+          <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">Acompañamiento lúdico y empático para el desarrollo emocional pleno en la niñez.</p>
         </article>
-
         <!-- Servicio 2 -->
-        <article
-          class="w-[calc(50%-0.5rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] flex flex-col items-center p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden"
-        >
-          <div
-            class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"
-          >
-          </div>
-          <div
-            class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0"
-          >
-            🛋️
-          </div>
-          <h3
-            class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight"
-          >
-            Terapia Cognitivo Conductual
-          </h3>
-          <p
-            class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10"
-          >
-            Atención estructurada para adultos, enfocada en resolver problemas
-            actuales.
-          </p>
+        <article class="flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
+          <div class="w-16 h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0">🛋️</div>
+          <h3 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Terapia Cognitivo Conductual</h3>
+          <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">Atención estructurada para adultos, enfocada en resolver problemas actuales.</p>
         </article>
-
         <!-- Servicio 3 -->
-        <article
-          class="w-[calc(50%-0.5rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] flex flex-col items-center p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden"
-        >
-          <div
-            class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-green)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-green)]/10 transition-colors duration-500"
-          >
-          </div>
-          <div
-            class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0"
-          >
-            📚
-          </div>
-          <h3
-            class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight"
-          >
-            Terapia de Aprendizaje
-          </h3>
-          <p
-            class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10"
-          >
-            Estrategias para superar retos académicos y fomentar asimilación
-            efectiva.
-          </p>
+        <article class="flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-green)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-green)]/10 transition-colors duration-500"></div>
+          <div class="w-16 h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0">📚</div>
+          <h3 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Terapia de Aprendizaje</h3>
+          <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">Estrategias para superar retos académicos y fomentar asimilación efectiva.</p>
         </article>
-
         <!-- Servicio 4 -->
-        <article
-          class="w-[calc(50%-0.5rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] flex flex-col items-center p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden"
-        >
-          <div
-            class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"
-          >
-          </div>
-          <div
-            class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0"
-          >
-            📋
-          </div>
-          <h3
-            class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight"
-          >
-            Neurodesarrollo
-          </h3>
-          <p
-            class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10"
-          >
-            Diagnóstico temprano e intervención para neurocognición.
-          </p>
+        <article class="flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
+          <div class="w-16 h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0">📋</div>
+          <h3 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Neurodesarrollo</h3>
+          <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">Diagnóstico temprano e intervención para neurocognición.</p>
         </article>
-
         <!-- Servicio 5 -->
-        <article
-          class="w-[calc(50%-0.5rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] flex flex-col items-center p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden"
-        >
-          <div
-            class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-green)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-green)]/10 transition-colors duration-500"
-          >
-          </div>
-          <div
-            class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0"
-          >
-            🔍
-          </div>
-          <h3
-            class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight"
-          >
-            Orientación Vocacional
-          </h3>
-          <p
-            class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10"
-          >
-            Acompañamiento en jóvenes para descubrir aptitudes.
-          </p>
+        <article class="flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-green)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-green)]/10 transition-colors duration-500"></div>
+          <div class="w-16 h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0">🔍</div>
+          <h3 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Orientación Vocacional</h3>
+          <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">Acompañamiento en jóvenes para descubrir aptitudes.</p>
         </article>
       </div>
     </div>
@@ -529,133 +467,43 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
 
-      <div
-        class="flex flex-wrap justify-center items-stretch gap-4 sm:gap-6 md:gap-8 text-center reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-200 ease-out"
-      >
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-center reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 delay-200 ease-out">
         <!-- Zona Río -->
-        <article
-          class="w-[calc(50%-0.5rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] flex flex-col items-center p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden"
-        >
-          <div
-            class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"
-          >
-          </div>
-          <div
-            class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0"
-          >
-            🌟
-          </div>
-          <h3
-            class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight"
-          >
-            Zona Río
-          </h3>
-          <p
-            class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10"
-          >
-            Instalaciones de calidad y fácil acceso vehicular.
-          </p>
+        <article class="flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
+          <div class="w-16 h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0">🏙️</div>
+          <h3 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Zona Río</h3>
+          <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">Instalaciones de calidad y fácil acceso vehicular.</p>
         </article>
-
         <!-- Fundadores -->
-        <article
-          class="w-[calc(50%-0.5rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] flex flex-col items-center p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden"
-        >
-          <div
-            class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"
-          >
-          </div>
-          <div
-            class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0"
-          >
-            🌟
-          </div>
-          <h3
-            class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight"
-          >
-            Fundadores
-          </h3>
-          <p
-            class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10"
-          >
-            Consultorios para tu absoluta tranquilidad personal.
-          </p>
+        <article class="flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
+          <div class="w-16 h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0">🏛️</div>
+          <h3 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Fundadores</h3>
+          <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">Ubicación céntrica con atención personalizada.</p>
         </article>
-
         <!-- La Cacho -->
-        <article
-          class="w-[calc(50%-0.5rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] flex flex-col items-center p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden"
-        >
-          <div
-            class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"
-          >
-          </div>
-          <div
-            class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0"
-          >
-            🌟
-          </div>
-          <h3
-            class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight"
-          >
-            La Cacho
-          </h3>
-          <p
-            class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10"
-          >
-            El centro seguro, con la privacidad que mereces.
-          </p>
+        <article class="flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
+          <div class="w-16 h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0">🏡</div>
+          <h3 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">La Cacho</h3>
+          <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">Espacio tranquilo y profesional en una zona emblemática.</p>
         </article>
-
-        <!-- El Pipila -->
-        <article
-          class="w-[calc(50%-0.5rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] flex flex-col items-center p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden"
-        >
-          <div
-            class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"
-          >
-          </div>
-          <div
-            class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0"
-          >
-            🌟
-          </div>
-          <h3
-            class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight"
-          >
-            El Pípila
-          </h3>
-          <p
-            class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10"
-          >
-            Cerca de tu entorno y altamente conveniente.
-          </p>
+        <!-- El Pípila -->
+        <article class="flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
+          <div class="w-16 h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0">🌟</div>
+          <h3 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">El Pípila</h3>
+          <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">Cerca de tu entorno y altamente conveniente.</p>
         </article>
-
         <!-- Las Palmas -->
-        <article
-          class="w-[calc(50%-0.5rem)] sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] flex flex-col items-center p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden"
-        >
-          <div
-            class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"
-          >
-          </div>
-          <div
-            class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-2xl sm:text-3xl mb-3 sm:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0"
-          >
-            🌟
-          </div>
-          <h3
-            class="text-[13px] sm:text-xl md:text-lg lg:text-xl font-bold text-[var(--color-gaba-navy)] mb-2 sm:mb-3 z-10 leading-tight"
-          >
-            Las Palmas
-          </h3>
-          <p
-            class="text-[var(--color-gaba-navy)]/70 text-[11px] sm:text-sm leading-snug sm:leading-relaxed flex-grow z-10"
-          >
-            Atención y elegancia unidas para una recuperación inigualable.
-          </p>
+        <article class="flex flex-col items-center p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl hover:border-[var(--color-gaba-blue)]/40 transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
+          <div class="w-16 h-16 rounded-xl sm:rounded-2xl bg-[var(--color-gaba-surface)] shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 border border-[var(--color-gaba-border)] z-10 shrink-0">🌳</div>
+          <h3 class="text-lg sm:text-xl font-bold text-[var(--color-gaba-navy)] mb-3 z-10 leading-tight">Las Palmas</h3>
+          <p class="text-[var(--color-gaba-navy)]/70 text-sm leading-relaxed flex-grow z-10">Atención y elegancia unidas para una recuperación inigualable.</p>
         </article>
+      </div>
       </div>
     </div>
   </section>
@@ -1127,34 +975,35 @@ import Layout from "../layouts/Layout.astro";
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-16">
           <!-- Áreas de Trabajo -->
-          <article class="p-6 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8 flex flex-col hover:border-[var(--color-gaba-blue)]/40 relative overflow-hidden group">
+          <article class="p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8 flex flex-col hover:border-[var(--color-gaba-blue)]/40 relative overflow-hidden group text-center md:text-left">
             <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
-            <div class="flex items-center gap-4 mb-6 z-10">
-              <div class="w-12 h-12 rounded-xl bg-[var(--color-gaba-surface)] flex items-center justify-center text-2xl border border-[var(--color-gaba-border)] shadow-sm shrink-0 group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300">🏢</div>
-              <h3 class="text-xl font-bold text-[var(--color-gaba-navy)] leading-tight">El Centro Apoya En:</h3>
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-4 mb-6 z-10">
+              <div class="w-14 h-14 rounded-xl bg-[var(--color-gaba-surface)] flex items-center justify-center text-3xl border border-[var(--color-gaba-border)] shadow-sm shrink-0 group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300">🏢</div>
+              <h3 class="text-xl sm:text-2xl font-bold text-[var(--color-gaba-navy)] leading-tight mt-2 md:mt-0">El Centro Apoya En:</h3>
             </div>
-            <ul class="space-y-4 text-[var(--color-gaba-navy)]/80 z-10 text-[13px] sm:text-sm font-medium">
-              <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[var(--color-gaba-green)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Canalización de pacientes y difusión de servicios profesionales.</span></li>
-              <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[var(--color-gaba-green)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Coordinación ágil entre especialistas intervinientes.</span></li>
-              <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[var(--color-gaba-green)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Desarrollo de programas psicoeducativos en conjunto.</span></li>
-              <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[var(--color-gaba-green)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Orientación familiar, terapia clínica y trabajo interdisciplinario.</span></li>
+            <ul class="space-y-4 text-[var(--color-gaba-navy)]/80 z-10 text-sm font-medium">
+              <li class="flex items-start gap-3 justify-center md:justify-start text-left"><svg class="w-5 h-5 text-[var(--color-gaba-green)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Canalización de pacientes y difusión de servicios profesionales.</span></li>
+              <li class="flex items-start gap-3 justify-center md:justify-start text-left"><svg class="w-5 h-5 text-[var(--color-gaba-green)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Coordinación ágil entre especialistas intervinientes.</span></li>
+              <li class="flex items-start gap-3 justify-center md:justify-start text-left"><svg class="w-5 h-5 text-[var(--color-gaba-green)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Desarrollo de programas psicoeducativos en conjunto.</span></li>
+              <li class="flex items-start gap-3 justify-center md:justify-start text-left"><svg class="w-5 h-5 text-[var(--color-gaba-green)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Orientación familiar, terapia clínica y trabajo interdisciplinario.</span></li>
             </ul>
           </article>
 
           <!-- Modalidad de Vinculación -->
-          <article class="p-6 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8 delay-100 flex flex-col hover:border-[var(--color-gaba-blue)]/40 relative overflow-hidden group">
+          <article class="p-8 sm:p-10 rounded-2xl sm:rounded-3xl bg-[var(--color-gaba-surface-alt)] border border-[var(--color-gaba-border)]/60 shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll opacity-0 translate-y-8 delay-100 flex flex-col hover:border-[var(--color-gaba-blue)]/40 relative overflow-hidden group text-center md:text-left">
             <div class="absolute -top-10 -right-10 w-24 h-24 sm:w-32 sm:h-32 bg-[var(--color-gaba-blue)]/5 rounded-full blur-2xl group-hover:bg-[var(--color-gaba-blue)]/10 transition-colors duration-500"></div>
-            <div class="flex items-center gap-4 mb-6 z-10">
-              <div class="w-12 h-12 rounded-xl bg-[var(--color-gaba-surface)] flex items-center justify-center text-2xl border border-[var(--color-gaba-border)] shadow-sm shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">🤝</div>
-              <h3 class="text-xl font-bold text-[var(--color-gaba-navy)] leading-tight">Modalidad de Vinculación</h3>
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-4 mb-6 z-10">
+              <div class="w-14 h-14 rounded-xl bg-[var(--color-gaba-surface)] flex items-center justify-center text-3xl border border-[var(--color-gaba-border)] shadow-sm shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">🤝</div>
+              <h3 class="text-xl sm:text-2xl font-bold text-[var(--color-gaba-navy)] leading-tight mt-2 md:mt-0">Modalidad de Vinculación</h3>
             </div>
-            <p class="mb-5 text-[var(--color-gaba-navy)]/80 text-[13px] sm:text-sm font-medium z-10">Esquema de colaboración profesional puramente independiente:</p>
-            <ul class="space-y-4 text-[var(--color-gaba-navy)]/80 z-10 text-[13px] sm:text-sm">
-              <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[var(--color-gaba-blue)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>Los terapeutas mantienen su consultorio o espacio propio de atención.</span></li>
-              <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[var(--color-gaba-blue)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>El manejo clínico de los pacientes corresponde única y exclusivamente al terapeuta titular.</span></li>
-              <li class="flex items-start gap-3"><svg class="w-5 h-5 text-[var(--color-gaba-blue)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>Los honorarios profesionales se establecen y perciben de manera autónoma.</span></li>
+            <p class="mb-5 text-[var(--color-gaba-navy)]/80 text-sm font-medium z-10">Esquema de colaboración profesional puramente independiente:</p>
+            <ul class="space-y-4 text-[var(--color-gaba-navy)]/80 z-10 text-sm">
+              <li class="flex items-start gap-3 justify-center md:justify-start text-left"><svg class="w-5 h-5 text-[var(--color-gaba-blue)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>Los terapeutas mantienen su consultorio o espacio propio de atención.</span></li>
+              <li class="flex items-start gap-3 justify-center md:justify-start text-left"><svg class="w-5 h-5 text-[var(--color-gaba-blue)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>El manejo clínico de los pacientes corresponde única y exclusivamente al terapeuta titular.</span></li>
+              <li class="flex items-start gap-3 justify-center md:justify-start text-left"><svg class="w-5 h-5 text-[var(--color-gaba-blue)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>Los honorarios profesionales se establecen y perciben de manera autónoma.</span></li>
             </ul>
           </article>
+        </div>
         </div>
 
         <!-- Principios y Colaboración -->
@@ -1226,6 +1075,20 @@ import Layout from "../layouts/Layout.astro";
             </li>
             <li>
               <a
+                href="#identidad"
+                class="hover:text-[var(--color-gaba-blue)] transition"
+                >Nuestra Identidad</a
+              >
+            </li>
+            <li>
+              <a
+                href="#especialidades"
+                class="hover:text-[var(--color-gaba-blue)] transition"
+                >Especialidades</a
+              >
+            </li>
+            <li>
+              <a
                 href="#sedes"
                 class="hover:text-[var(--color-gaba-blue)] transition"
                 >Nuestras Sedes</a
@@ -1233,9 +1096,9 @@ import Layout from "../layouts/Layout.astro";
             </li>
             <li>
               <a
-                href="#terapeutas"
+                href="#modelo-funcionamiento"
                 class="hover:text-[var(--color-gaba-blue)] transition"
-                >Opciones Terapéuticas</a
+                >Modelo de Funcionamiento</a
               >
             </li>
           </ul>
